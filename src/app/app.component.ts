@@ -15,7 +15,6 @@ export class AppComponent {
 
   ngOnInit() {
     this.dataset = (sampleData as any).default;
-    console.log(this.dataset);
   }
 
   getData() {
