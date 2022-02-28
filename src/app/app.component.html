@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<div *ngIf="data">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width:25%">Name</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of dataset?.results">
+        <td>{{ data.name }}</td>
+        <td>{{ data.url }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
